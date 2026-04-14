@@ -1,19 +1,14 @@
-from typing import Optional
-
-from sqlalchemy import String, Float
-from sqlalchemy.orm import Mapped, mapped_column, relationship
-
+from sqlalchemy import Column, String, Float, Integer
 from app.database import Base
 
 
 class Produto(Base):
-    __tablename__ = "produtos"
+    __tablename__ = "dim_produtos"
 
-    id_produto: Mapped[str] = mapped_column(String(32), primary_key=True)
-    nome_produto: Mapped[str] = mapped_column(String(255))
-    categoria_produto: Mapped[str] = mapped_column(String(100))
-    peso_produto_gramas: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
-    comprimento_centimetros: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
-    altura_centimetros: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
-    largura_centimetros: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
-
+    id_produto = Column(String, primary_key=True, index=True)
+    nome_produto = Column(String)
+    categoria_produto = Column(String)
+    peso_produto_gramas = Column(Float)
+    comprimento_centimetros = Column(Float)
+    altura_centimetros = Column(Float)
+    largura_centimetros = Column(Float)
