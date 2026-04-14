@@ -1,4 +1,4 @@
-Sistema de Gerenciamento de E-Commerce (Visagio Rocket Lab 2026)
+Sistema de Gerenciamento de E-Commerce 
 
 Esta é uma aplicação Fullstack desenvolvida para o gerenciamento de produtos de um E-Commerce. O sistema permite ao usuário navegar por um catálogo, buscar itens específicos, gerenciar o inventário (CRUD) e visualizar métricas de desempenho como total de vendas e média de avaliações.
 
