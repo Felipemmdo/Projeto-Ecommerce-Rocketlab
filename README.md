@@ -18,8 +18,10 @@ Esta é uma aplicação Fullstack desenvolvida para o gerenciamento de produtos 
 
 ## 🚀 Como executar o Backend
 
+```
+
 1. Navegue até a pasta do backend e crie um ambiente virtual:
-```bash
+
 cd backend
 python -m venv venv
 
